@@ -1,0 +1,199 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #111;
+        }
+
+        /* Верхнее меню */
+        header {
+            width: 680px;
+            max-width: 95%;
+            margin: auto;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: #bbb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 10px;
+            margin-left: 20px;
+        }
+
+        /* Главный заголовок */
+        .main {
+            text-align: center;
+            padding-top: 36px;
+        }
+
+        .main h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 11px;
+            line-height: 24px;
+        }
+
+        .freepik {
+            margin-top: 20px;
+            font-size: 11px;
+        }
+
+        .freepik a {
+            color: black;
+        }
+
+        /* Блоки */
+        .blocks {
+            width: 680px;
+            max-width: 95%;
+            margin: 38px auto 35px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .block {
+            height: 206px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding-top: 18px;
+            color: white;
+        }
+
+        .block h3 {
+            font-size: 15px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        /* Цвета блоков */
+        .consultations {
+            background: #555;
+        }
+
+        .strategy {
+            background: #f45b0b;
+        }
+
+        .investment {
+            background: #555;
+        }
+
+        .marketing {
+            background: #8bc900;
+        }
+
+        .startups {
+            background: #777;
+        }
+
+        .crisis {
+            background: #28c5bd;
+        }
+
+        /* Простые фигуры вместо картинок */
+        .shapes {
+            position: relative;
+            width: 110px;
+            height: 100px;
+            margin-top: 25px;
+        }
+
+        .circle {
+            width: 65px;
+            height: 65px;
+            border: 5px solid rgba(255,255,255,0.7);
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .square {
+            width: 48px;
+            height: 48px;
+            border: 5px solid rgba(255,255,255,0.7);
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+
+        .circle2 {
+            width: 45px;
+            height: 45px;
+            border: 5px solid rgba(255,255,255,0.7);
+            border-radius: 50%;
+            position: absolute;
+            right: 5px;
+            top: 0;
+        }
+
+        .square2 {
+            width: 65px;
+            height: 65px;
+            border: 5px solid rgba(255,255,255,0.7);
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+        }
+
+        /* Нижний блок */
+        footer {
+            width: 100%;
+            height: 100px;
+            background: #303030;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 9px;
+            line-height: 14px;
+        }
+
+        /* Для телефона */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 0 10px;
+            }
+
+            .main h1 {
+                font-size: 23px;
+            }
+
+            .description {
+                padding: 0 15px;
+            }
+
+            .blocks {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .block {
+                height: 170px;
+            }
+
+            .block h3 {
+                font-size: 12px;
+            }
+        }
